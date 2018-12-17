@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PoslediciComponent } from './posledici.component';
+import { WakeUpCallComponent } from './wake-up-call.component';
 
-describe('PoslediciComponent', () => {
-  let component: PoslediciComponent;
-  let fixture: ComponentFixture<PoslediciComponent>;
+describe('WakeUpCallComponent', () => {
+  let component: WakeUpCallComponent;
+  let fixture: ComponentFixture<WakeUpCallComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ PoslediciComponent ]
+      declarations: [ WakeUpCallComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(PoslediciComponent);
+    fixture = TestBed.createComponent(WakeUpCallComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
