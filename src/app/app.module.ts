@@ -7,6 +7,8 @@ import { PoslediciComponent } from './posledici/posledici.component';
 import { SoluciiComponent } from './solucii/solucii.component';
 import { WakeUpCallComponent } from './wake-up-call/wake-up-call.component';
 import { MovementComponent } from './movement/movement.component';
+import { HomeComponent } from './home/home.component';
+import { NewsComponent } from './news/news.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { MovementComponent } from './movement/movement.component';
     PoslediciComponent,
     SoluciiComponent,
     WakeUpCallComponent,
-    MovementComponent
+    MovementComponent,
+    HomeComponent,
+    NewsComponent
   ],
   imports: [
     BrowserModule,
