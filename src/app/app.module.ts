@@ -14,19 +14,24 @@ import { MovementComponent } from './movement/movement.component';
 import { NewsComponent } from './news/news.component';
 import { HomeComponent } from './home/home.component';
 import { MenuComponent } from './menu/menu.component';
+import { SliderComponent } from './slider/slider.component';
+import { ThemeModule } from './Theme.module';
 
 
 // @ts-ignore
 @NgModule({
   declarations: [
+    AppComponent,
     WakeUpCallComponent,
     MovementComponent,
     NewsComponent,
     HomeComponent,
     MenuComponent,
-   routingComponents
+   routingComponents,
+   SliderComponent
   ],
   imports: [
+    ThemeModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
