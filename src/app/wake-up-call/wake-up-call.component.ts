@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./wake-up-call.component.sass']
 })
 export class WakeUpCallComponent implements OnInit {
-
+  title  = 'Wake up call';
   constructor() { }
 
   ngOnInit() {
