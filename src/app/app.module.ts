@@ -5,7 +5,9 @@ import { SliderModule } from 'angular-image-slider';
 import {SlideshowModule} from 'ng-simple-slideshow';
 
 
-import { AppRoutingModule } from './app-routing.module';
+
+import {AppRoutingModule, routingComponents} from './app-routing.module';
+
 import { AppComponent } from './app.component';
 import { WakeUpCallComponent } from './wake-up-call/wake-up-call.component';
 import { MovementComponent } from './movement/movement.component';
@@ -13,14 +15,16 @@ import { NewsComponent } from './news/news.component';
 import { HomeComponent } from './home/home.component';
 import { MenuComponent } from './menu/menu.component';
 
+
+// @ts-ignore
 @NgModule({
   declarations: [
-    AppComponent,
     WakeUpCallComponent,
     MovementComponent,
     NewsComponent,
     HomeComponent,
     MenuComponent
+   routingComponents
   ],
   imports: [
     BrowserModule,
@@ -29,7 +33,7 @@ import { MenuComponent } from './menu/menu.component';
     SliderModule,
     SlideshowModule
   ],
-  providers: [],
+    providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
