@@ -23,7 +23,7 @@ import { MenuComponent } from './menu/menu.component';
     MovementComponent,
     NewsComponent,
     HomeComponent,
-    MenuComponent
+    MenuComponent,
    routingComponents
   ],
   imports: [
