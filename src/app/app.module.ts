@@ -1,28 +1,30 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SliderModule } from 'angular-image-slider';
+import {SlideshowModule} from 'ng-simple-slideshow';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { PoslediciComponent } from './posledici/posledici.component';
-import { SoluciiComponent } from './solucii/solucii.component';
 import { WakeUpCallComponent } from './wake-up-call/wake-up-call.component';
 import { MovementComponent } from './movement/movement.component';
-import { HomeComponent } from './home/home.component';
 import { NewsComponent } from './news/news.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PoslediciComponent,
-    SoluciiComponent,
     WakeUpCallComponent,
     MovementComponent,
-    HomeComponent,
-    NewsComponent
+    NewsComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    SliderModule,
+    SlideshowModule
   ],
   providers: [],
   bootstrap: [AppComponent]
