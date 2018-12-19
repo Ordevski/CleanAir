@@ -5,13 +5,15 @@ import {HomeComponent} from './home/home.component';
 import {MovementComponent} from './movement/movement.component';
 import {NewsComponent} from './news/news.component';
 
-
-
 const routes: Routes = [
   {path: 'wake-up-call', component: WakeUpCallComponent},
   {path: 'home' , component: HomeComponent},
   {path: 'movement' , component: MovementComponent},
-  {path: 'news' , component: NewsComponent}
+  {path: 'news' , component: NewsComponent},
+  { path: '',
+    redirectTo: '/home',
+    pathMatch: 'full'
+  }
 ];
 
 
@@ -21,4 +23,4 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
-export const routingComponents = [WakeUpCallComponent, HomeComponent, MovementComponent, NewsComponent]
+export const routingComponents = [WakeUpCallComponent, HomeComponent, MovementComponent, NewsComponent];
