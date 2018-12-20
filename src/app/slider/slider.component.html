@@ -1,9 +1,52 @@
-<slideshow [height]="height"
-            class="slideshow"
-           [minHeight]="'525px'"
-           [autoPlay]="true"
-           [showArrows]="true"
-           [imageUrls]="imagesUrls"
-           [lazyLoad]="imagesUrls?.length > 1"
-           [autoPlayWaitForLazyLoad]="true">
-</slideshow>
+<div>
+    <div class="image" style="background-image:url('http://www.ticotimes.net/wp-content/uploads/2015/06/150609ChileSmog01.jpg');">
+    <h3 class="title1" >Study Uncovers Link Between Air Pollution and Intellectual Disabilities in Children</h3>
+    <button class="click1" (click)="toggleCollapse()">read more...</button>
+    <div *ngIf="!isCollapsed"> 
+        <p class="text">British children with intellectual disabilities are more likely than their peers to live in areas with high outdoor air pollution, according to a new Journal of Intellectual Disability Research study funded by Public Health England.
+
+                The findings come from an analysis of data extracted from the UK's Millennium Cohort Study, a nationally representative sample of more than 18,000 UK children born in 2000 to 2002.
+                
+                Averaging across ages, children with intellectual disabilities were 33 percent more likely to live in areas with high levels of diesel particulate matter, 30 percent more likely to live in areas with high levels of nitrogen dioxide, 30 percent more likely to live in areas with high levels of carbon monoxide, and 17 percent more likely to live in areas with high levels of sulphur dioxide.
+                
+                The authors note that intellectual disability is more common among children living in more socio-economically deprived areas, which tend to have higher levels of air pollution; however, exposure to outdoor air pollution may impede cognitive development, thereby increasing the risk of intellectual disability.
+                
+                "We know that people with intellectual disabilities in the UK have poorer health and die earlier than they should. This research adds another piece to the jigsaw of understanding why that is the case and what needs to be done about it," said lead author Dr. Eric Emerson, of The University of Sydney, in Australia.</p>
+    
+            </div>
+    </div >
+    <div class="image" style="background-image:url('https://www.review-hub.co.uk/wp-content/uploads/2017/11/Xiaomi-Air-Purifier-Pro-696x302.jpg');">
+    <h3 class="title1" >Your heart hates air pollution; portable filters could help</h3>
+    <button class="click1" (click)="toggleCollapse1()">read more...</button>
+    <div *ngIf="!isCollapsed1">
+        <p class="text">Microscopic particles floating in the air we breathe come from sources such as fossil fuel combustion, fires, cigarettes and vehicles. Known as fine particulate matter, this form of air pollution increases the risk of cardiovascular and other serious health problems.
+
+                "Despite improvements in air quality across the U.S. during the past few decades, more than 88,000 deaths per year occur in the U.S. due to fine particulate matter air pollution exposure," says Robert Brook, M.D., a cardiovascular medicine specialist at the University of Michigan's Frankel Cardiovascular Center.
+                
+                Now, researchers have found that an inexpensive portable air purifier used inside a home is powerful enough to round up a good portion of those miniscule particles and get them out of the indoor air -- a simple move that may protect the heart.
+                
+                A recent study published in JAMA Internal Medicine found three days of using a low-cost air purifier at home significantly lowered urban seniors' fine particulate matter exposure. It also significantly lowered their blood pressure, which is the leading cause of morbidity and mortality worldwide.
+                
+                "The results show that a simple practical intervention using inexpensive indoor air filtration units can help protect at-risk individuals from the adverse health effects of fine particulate matter air pollution," says Brook, the study's senior author.
+                
+                He conducted the research with colleagues from the University of Michigan and Michigan State University, including first author Masako Morishita, Ph.D., of MSU.</p>
+            </div>
+        </div>
+
+
+        <div class="image" style="background-image:url('https://previews.123rf.com/images/hramovnick/hramovnick1402/hramovnick140200032/25873187-environmental-pollution.jpg');">
+            <h3 class="title1" >Pollution in cities damaging insects and ecosystems</h3>
+    <button class="click1" (click)="toggleCollapse2()">read more...</button>
+    <div *ngIf="!isCollapsed2">
+        <p class="text">British children with intellectual disabilities are more likely than their peers to live in areas with high outdoor air pollution, according to a new Journal of Intellectual Disability Research study funded by Public Health EnglandHigh levels of pollution found in many of the world's major cities are having negative effects on plants and insects, according to new research from the University of Sheffield.
+
+                The study, published in Nature Communications, reveals that plants exposed to high levels of nitrogen dioxide (NO2) -- similar to levels recorded in major urban centres -- are able to better defend themselves against herbivorous insects.
+                
+                Led by Dr Stuart Campbell from the University's Department of Animal and Plant Sciences, the research has discovered that plants exposed to increased levels of pollution produce more defensive chemicals in their leaves.
+                
+                Results from the study show that insects feeding on these leaves grew poorly, which suggests high levels of air pollution may be having cascading negative effects on communities of herbivorous creatures.</p> 
+            </div>
+        </div>
+
+    
+</div>

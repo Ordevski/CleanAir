@@ -15,6 +15,13 @@ import { WakeUpCallComponent } from './wake-up-call/wake-up-call.component';
 import { MovementComponent } from './movement/movement.component';
 import { NewsComponent } from './news/news.component';
 import { HomeComponent } from './home/home.component';
+import { SliderComponent } from './slider/slider.component';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { MediaIconComponent } from './media-icon/media-icon.component';
+import { EventsComponent } from './events/events.component';
+import { RatingModule } from 'ngx-bootstrap/rating';
+
+
 
 // @ts-ignore
 @NgModule({
@@ -24,7 +31,10 @@ import { HomeComponent } from './home/home.component';
     MovementComponent,
     NewsComponent,
     HomeComponent,
-    routingComponents
+    routingComponents,  
+    SliderComponent,
+     MediaIconComponent,
+     EventsComponent,
   ],
   imports: [
     BrowserModule,
@@ -34,7 +44,8 @@ import { HomeComponent } from './home/home.component';
     SlideshowModule,
     MatButtonModule,
     MatCheckboxModule,
-    FormsModule
+    FormsModule,
+    NgbModule,
   ],
     providers: [],
   bootstrap: [AppComponent]
