@@ -1,12 +1,14 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { SliderModule } from 'angular-image-slider';
+import {BrowserModule } from '@angular/platform-browser';
+import {NgModule } from '@angular/core';
+import {BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {SliderModule } from 'angular-image-slider';
 import {SlideshowModule} from 'ng-simple-slideshow';
 import {MatButtonModule, MatCheckboxModule} from '@angular/material';
 import {FormsModule} from '@angular/forms';
-
-
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { MatIconModule } from '@angular/material/icon';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatMenuModule} from '@angular/material/menu';
 
 import {AppRoutingModule, routingComponents} from './app-routing.module';
 
@@ -15,6 +17,8 @@ import { WakeUpCallComponent } from './wake-up-call/wake-up-call.component';
 import { MovementComponent } from './movement/movement.component';
 import { NewsComponent } from './news/news.component';
 import { HomeComponent } from './home/home.component';
+import { SliderComponent } from './slider/slider.component';
+
 
 // @ts-ignore
 @NgModule({
@@ -24,7 +28,8 @@ import { HomeComponent } from './home/home.component';
     MovementComponent,
     NewsComponent,
     HomeComponent,
-    routingComponents
+    routingComponents,
+    SliderComponent
   ],
   imports: [
     BrowserModule,
@@ -32,9 +37,13 @@ import { HomeComponent } from './home/home.component';
     BrowserAnimationsModule,
     SliderModule,
     SlideshowModule,
-    MatButtonModule,
     MatCheckboxModule,
-    FormsModule
+    FormsModule,
+    FlexLayoutModule,
+    MatIconModule,
+    MatButtonModule,
+    MatToolbarModule,
+    MatMenuModule
   ],
     providers: [],
   bootstrap: [AppComponent]
