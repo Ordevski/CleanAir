@@ -6,19 +6,18 @@ import { HostListener } from '@angular/core';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
+
+
+
 export class HomeComponent implements OnInit {
 
   public imagesUrl;
   height: number;
+  title = 'CleanAir';
   constructor() { }
 
-  @HostListener('window:resize', ['$event'])
-  onResize(event) {
-    this.height = window.innerHeight;
-  }
-
   ngOnInit() {
-    this.height = window.innerHeight;
+    this.height = 400;
     console.log(this.height);
 
     this.imagesUrl = [

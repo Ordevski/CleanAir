@@ -1,10 +1,32 @@
 <!--angular-image-slider [images] =  "imagesUrl"></angular-image-slider-->
-<slideshow [height]="height"
-            class="slideshow"
-           [minHeight]="'525px'"
-           [autoPlay]="true"
-           [showArrows]="false"
-           [imageUrls]="imagesUrl"
-           [lazyLoad]="imagesUrl?.length > 1"
-           [autoPlayWaitForLazyLoad]="true">
-</slideshow>
+<!-- <div class="surface">
+    <nav>
+        <ul>
+            <li id="logo">CleanAir</li>
+            <li id = "link1"><a routerLink="/wake-up-call">Wake Up</a></li>
+            <li id = "link2"><a routerLink="/news">News</a></li>
+            <li id = "link3"><a routerLink="/movement">Movement</a></li>
+        </ul>
+    </nav>
+</div> -->
+<div class="back">
+    <slideshow [height]="height" class="slideshow" [minHeight]="'525px'" [autoPlay]="true" [showArrows]="false" [imageUrls]="imagesUrl"
+        [lazyLoad]="imagesUrl?.length > 1" [autoPlayWaitForLazyLoad]="true">
+    </slideshow>
+    <div id="top1">
+            <span class = "quotes">You can’t escape from it.</span>    
+        </div>
+    <div id ="top2">
+             <span class = "quotes">Everybody is affected by air pollution.</span>
+        </div>
+    <div id="top3">
+            <span class = "quotes">If you don't kill pollution, it will kill you.</span>
+        </div>
+    <div id="top4">
+            <span class = "quotes">7 million premature deaths annually.</span>
+    </div>
+    <div id="top5">
+        <span class = "quotes">Act.</span>
+    </div>
+</div>
+

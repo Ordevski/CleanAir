@@ -1,3 +1,4 @@
+
   <nav>
     <a routerLink="/home" routerLinkActive="active">Home</a>
     <a routerLink="/movement" routerLinkActive="active">Movement</a>
@@ -5,5 +6,21 @@
     <a routerLink="/wake-up-call" routerLinkActive="active">Wake Up</a>
   </nav>
   <router-outlet></router-outlet>
+<mat-toolbar color="primary">
 
- 
+    <div fxLayout="row" fxLayoutAlign="end">
+        
+        <a mat-button fxFlex="auto" routerLink = "home" id = "logo">#CleanAir</a>
+
+        <div class = "menu">
+            <a mat-button fxFlex="auto" routerLink = "wake-up-call" class = "navButton">Wake Up</a>
+            <a mat-button fxFlex="auto" routerLink = "news" class = "navButton">News</a>
+            <a mat-button fxFlex="auto" routerLink = "movement" class = "navButton">Movement</a>
+        </div>
+        
+    </div>
+
+    <img src="logo_transparent.png" alt="logooo" class = "imageLogo">
+  
+  </mat-toolbar>
+<router-outlet></router-outlet>
