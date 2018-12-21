@@ -18,14 +18,11 @@ import { MovementComponent } from './movement/movement.component';
 import { NewsComponent } from './news/news.component';
 import { HomeComponent } from './home/home.component';
 import { SliderComponent } from './slider/slider.component';
-<<<<<<< HEAD
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { MediaIconComponent } from './media-icon/media-icon.component';
 import { EventsComponent } from './events/events.component';
 import { RatingModule } from 'ngx-bootstrap/rating';
 
-=======
->>>>>>> 5589b296ee02c8604deaa7b3e2da91e34b088ce3
 
 
 // @ts-ignore
@@ -36,11 +33,10 @@ import { RatingModule } from 'ngx-bootstrap/rating';
     MovementComponent,
     NewsComponent,
     HomeComponent,
-    routingComponents,  
+    routingComponents,
     SliderComponent,
-     MediaIconComponent,
-     EventsComponent,
-
+    MediaIconComponent,
+    EventsComponent,
   ],
   imports: [
     BrowserModule,

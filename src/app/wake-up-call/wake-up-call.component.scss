@@ -1,0 +1,61 @@
+body{
+    width: 1500px;
+    background-image: 'https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/hrSk1Kq/videoblocks-smoke-background-loop-with-alpha-blue-green-smoke_sez-s45ncg_thumbnail-full01.png';
+}
+.background{
+    position: absolute;
+    width: 1500px;
+}
+.carousel{
+    position: absolute;
+    z-index: 1000;
+    height: 800px;
+    width: 1000px;
+    margin-left: 165px;
+    margin-top: 20px; 
+    //margin-top: 30px;
+    //margin-left: 200px;
+    align-content: center;
+    //border: 10px solid rgb(255, 160, 160);
+}
+.carousel-control-prev{
+    background-color: black;
+}
+.carousel-control-next{
+    background-color: black;
+}
+.carousel-inner{
+    margin-left: 200px;
+}
+.carousel-item{
+    margin-top: 60px;
+    padding-top: 30px;
+    width: 600px;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    color: rgb(255, 247, 238);
+    text-shadow: beige
+}
+h2{
+    margin-bottom: 30px;
+    font-weight: 800px;
+    color: rgb(255, 247, 238);
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif; 
+}
+#pic1{
+    height: 270px;
+    width: auto;
+    margin-top: 25px;
+    margin-left: 220px;
+}
+#pic2{
+    height: 270px;
+    width: auto;
+    margin-top: 25px;
+    margin-left: 220px;
+}
+#pic3{
+    height: 270px;
+    width: auto;
+    margin-top: 25px;
+    margin-left: 220px;
+}
