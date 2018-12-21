@@ -36,13 +36,12 @@ import { HttpClientModule} from '@angular/common/http';
     MovementComponent,
     NewsComponent,
     HomeComponent,
-    routingComponents,  
+    routingComponents,
     SliderComponent,
      MediaIconComponent,
      EventsComponent,
-     PostsComponent,
+     PostsComponent
     
-
   ],
   imports: [
     BrowserModule,
