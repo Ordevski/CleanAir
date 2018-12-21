@@ -1,93 +1,139 @@
 
   
 <div class="container" >
-<div>
-<h2 ><span  class="badge badge-secondary">Events</span></h2>
+  <div class=left>
+    <div>
+<h2 ><span  class="title">Events</span></h2>
 </div>
+
+
 <div class="event1">
-  <h2>Discuss the issues</h2>
+  <h2 class="event-t">Discuss the issues</h2>
   <h4>
-     Event: 10.01.2018
+     Date: 10.01.2018
     </h4>
     <h4>
     Time: 18:00
   </h4>
   <h4>
-    Place: X-host
+    Location: X-host
   </h4>
+  <button class="button-event" (click)="toggleCollapse()">Details</button>
+  <div  *ngIf="!isCollapsed">
+  <p class="button-text">We gonna discuss about real problems that causes air pollution</p>
+</div>
 </div>
 
 
 
 
 <div class="event1">
-    <h2>Revolution</h2>
+    <h2  class="event-t">Wake-up event</h2>
     <h4>
-       Event: 10.01.2018
+       Event: 18.01.2018
       </h4>
       <h4>
-      Time: 18:00
+      Time: 16:00
     </h4>
     <h4>
-      Place: X-host
+      Location: Jazz&in
     </h4>
+    <button class="button-event" (click)="toggleCollapse1()">Details</button>
+    <div  *ngIf="!isCollapsed1">
+    <p class="button-text">Come to see what's the real problem with air pollution and let's solve it together</p>
+  </div>
   </div>
 
 
 
   <div class="event1">
-      <h2>Discuss the issues</h2>
+      <h2 class="event-t">Let's unite against our killer</h2>
       <h4>
-         Event: 10.01.2018
+         Event: 28.01.2018
         </h4>
         <h4>
         Time: 18:00
       </h4>
       <h4>
-        Place: X-host
+        Location:Front House
       </h4>
+      <button class="button-event" (click)="toggleCollapse2()">Details</button>
+      <div  *ngIf="!isCollapsed2">
+      <p class="button-text">Let's unite and give each other support against air pollution</p>
+    </div>
     </div>
   
 
     <div class="event1">
-        <h2>Discuss the issues</h2>
+        <h2  class="event-t">Begin and don't quit</h2>
         <h4>
-           Event: 10.01.2018
+           Event: 06.02.2018
           </h4>
           <h4>
-          Time: 18:00
+          Time: 19:00
         </h4>
         <h4>
-          Place: X-host
+          Location: Hadson
         </h4>
+        <button class="button-event" (click)="toggleCollapse3()">Details</button>
+        <div  *ngIf="!isCollapsed3">
+        <p class="button-text">This event gonna change your mindset,come and see</p>
+      </div>
       </div>
 
       <div class="event1">
-          <h2>Discuss the issues</h2>
+          <h2 class="event-t">Against Air Pollution</h2>
           <h4>
-             Event: 10.01.2018
+             Event: 20.02.2018
             </h4>
             <h4>
-            Time: 18:00
+            Time: 15:00
           </h4>
           <h4>
-            Place: X-host
+            Location: Ball house
           </h4>
+          <button class="button-event" (click)="toggleCollapse4()">Details</button>
+          <div  *ngIf="!isCollapsed4">
+          <p class="button-text">describing the real techniques against air pollution</p>
+        </div>
         </div>
 
         <div class="event1">
-            <h2>Discuss the issues</h2>
+            <h2 class="event-t">we can make it!</h2>
             <h4>
-               Event: 10.01.2018
+               Event: 17.03.2018
               </h4>
               <h4>
               Time: 18:00
             </h4>
             <h4>
-              Place: X-host
+              Location: Dostin
             </h4>
+            <button class="button-event" (click)="toggleCollapse5()">Details</button>
+            <div  *ngIf="!isCollapsed5">
+            <p class="button-text">Never lose faith,true facts about dedication</p>
           </div>
-        </div >
-    
-          
-    
+          </div>
+        </div>
+      
+
+        <div class="right">
+        <form>
+          <h1 class="report" > Report</h1>
+            <div class="form-group">
+              <label ><h4 >Problem</h4></label>
+              <input type="email" class="form-control" >
+              
+            </div>
+            <div class="form-group">
+              <label ><h4 >Description</h4></label>
+              <input type="description" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+
+      </div >
+
+      
+      
